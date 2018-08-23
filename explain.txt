@@ -1,0 +1,19 @@
+this project is a realization of face detection based on sfd.It reaches top 5 on FDDB contests unpublished way. I also used it on Wideface, reach a top 3 result.
+
+You can download the pretrained model from here
+https://pan.baidu.com/s/1NEW47LcsFKVPEm24D9ckFQ
+
+the caffe-sfd is revised based on caffe-ssd.so you can just
+configure it in the same way with ssd.
+
+Train:
+As fddb has some un-comment human face, you need to use our datasets,which have more face.
+
+ 
+eval:
+cd $SFD_ROOT/sfd_test_code/FDDB
+ 
+python fddb_test.py
+
+Pay attention you shuold not change the square result into circle
+use the offical evaluation tool, you need to use us Fiting.m do that change, it can get better result.
